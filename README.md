@@ -35,7 +35,7 @@ The project is also hosted on heroku --> [https://flask-api-api.herokuapp.com/st
 
 
 ## Project Structure
-
+```
 ├───app.py # main app.py file to be called to start server for web app
 |___README.md
 ├───requirements.txt   # File of pip install statements for your app
@@ -69,3 +69,4 @@ The project is also hosted on heroku --> [https://flask-api-api.herokuapp.com/st
 │   │   │    models.py
 │   │   │    views.py
 │   │   │    
+```
