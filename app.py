@@ -37,4 +37,9 @@ def page_not_found(e):
 
     return jsonify({"Error":"Page could not be found"})
 
-app.run(debug=True)
+
+    
+if __name__ == '__main__':
+    app.run()
+
+
