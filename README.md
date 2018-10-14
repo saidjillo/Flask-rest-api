@@ -26,6 +26,7 @@ then go to [http://localhost:5000/stores](http://localhost:5000/stores) to get a
 
 # Heroku
 The project is also hosted on heroku --> [https://flask-api-api.herokuapp.com/stores](https://flask-api-api.herokuapp.com/stores)
+ ´´´ <a href="/docs" class="btn btn-primary btn-md">Authentication</a> ´´´
 
 ## Project Structure
 
