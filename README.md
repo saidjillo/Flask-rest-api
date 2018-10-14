@@ -29,9 +29,9 @@ The project is also hosted on heroku --> [https://flask-api-api.herokuapp.com/st
 
 ## Quick Demo
 
-<a href="/docs" class="btn btn-primary btn-md">stores</a>
+<a href="https://flask-api-api.herokuapp.com/stores" class="btn btn-primary btn-md">stores</a> # returns a list of all stores
 
-<a href="/docs" class="btn btn-primary btn-md">list of all items</a>
+<a href="https://flask-api-api.herokuapp.com/items" class="btn btn-primary btn-md">list of all items</a> returns a list of all items from database
 
 
 ## Project Structure
