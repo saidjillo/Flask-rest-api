@@ -8,6 +8,14 @@ This project imitates an online store where clients can create a store , add ite
 
 This project is implemented using flask, and is a REST API for a store
 
+
+## Installation
+
+```
+pip install -r requirements.txt
+
+```
+
 ## Project Structure
 
 ├───app.py # main app.py file to be called to start server for web app
