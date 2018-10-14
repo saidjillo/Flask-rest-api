@@ -16,6 +16,17 @@ pip install -r requirements.txt
 
 ```
 
+## Run
+
+```
+python app.py
+
+```
+then go to [https://flask-api-api.herokuapp.com/stores](https://flask-api-api.herokuapp.com/stores) to get a list of all stores in the database
+
+# Heroku
+The project is also hosted on heroku --> [http://localhost:5000/stores](http://localhost:5000/stores)
+
 ## Project Structure
 
 ├───app.py # main app.py file to be called to start server for web app
