@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <main role="main">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <img src="{{url_for('static', filename='img/v2.1.png')}}" alt="">
+      <div class="container">
+        <h3>Flask restful pi</h3>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Demos &raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <h4>Api Breakdown</h4>
+      <div class="row"> 
+        <div class="col-md-4">
+          <h4>Store</h4>
+          <ul>
+              <li>
+                    <a href="#">GET /stores</a>  
+                    <p>Allows you to return a list of all stores from the database in json format</p>
+              </li>
+              <li>
+                    <a href="#">GET /store/id</a>  
+                   <p>Allows you to return one store with the specified id  from the database in json format</p>
+             </li>
+             <li>
+                    <a href="#">POST /store/name</a>  
+                   <p>Allows you to Create a new  store into the database with the specified name </p>
+             </li>
+             <li>
+                    <a href="#">POST /store/id/delete</a>  
+                   <p>Allows you to delete a  store from the database with the specified id.
+                       Note: This will require authentication
+                   </p>
+             </li>
+             <li>
+                    <a href="#">PUT /store/id/update</a>  
+                   <p>Allows you to update a  store. For instance the name of the store from the database with the specified id.
+                       Note: This will require authentication.
+                   </p>
+             </li>
+             <li>
+                    <a href="#">GET /stores/param</a>  
+                   <p>Allows you to search for stores from the database with the specified search param.The response is a json 
+                       object.
+                   </p>
+             </li>
+          </ul>
+          
+          
+          <p><a class="btn btn-secondary" href="{{url_for('query.store_queries')}}" role="button">View details&raquo;</a></p>
+        </div>
+
+        <div class="col-md-4">
+          <h4>Items</h4>
+          <ul>
+                <li>
+                       <a href="#">GET /items</a>  
+                      <p>Allows you to return a list of all stores from the database in json format</p>
+                </li>
+                <li>
+                      <a href="#">GET /store/id</a>  
+                     <p>Allows you to return one store with the specified id  from the database in json format</p>
+               </li>
+               <li>
+                      <a href="#">POST /store/name</a>  
+                     <p>Allows you to Create a new  store into the database with the specified name </p>
+               </li>
+               <li>
+                      <a href="#">POST /store/id/delete</a>  
+                     <p>Allows you to delete a  store from the database with the specified id.
+                         Note: This will require authentication
+                     </p>
+               </li>
+               <li>
+                      <a href="#">PUT /store/id/update</a>  
+                     <p>Allows you to update a  store. For instance the name of the store from the database with the specified id.
+                         Note: This will require authentication.
+                     </p>
+               </li>
+               <li>
+                      <a href="#">GET /stores/param</a>  
+                     <p>Allows you to search for stores from the database with the specified search param.The response is a json 
+                         object.
+                     </p>
+               </li>
+            </ul>
+          <p><a class="btn btn-secondary" href="{{url_for('all.item_query')}}" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h4>Accounts</h4>
+          <ul>
+                 No data to display 
+            </ul>
+          
+        </div>
+      </div>
+
+      <hr>
+
+    </div> <!-- /container -->
+
+  </main>
+
+
+{% endblock %}

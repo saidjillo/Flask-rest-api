@@ -27,7 +27,7 @@ class ItemModel(db.Model):
         self.date_created = str(datetime.datetime.now())
 
     def json(self):
-        return {'name':self.name, 'price':self.price}
+        return {'name':self.name, 'price':self.price, 'date_created':self.date_created, 'store_id':self.store_id}
 
 
     def save_to_db(self):

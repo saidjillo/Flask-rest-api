@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Flask api | items
+{% endblock %}
+
+{% block content %}
+<main role="main">
+
+    <div class="container" style="margin-top:80px;">
+        <div class="row">
+
+            <div class="col col-md-4">
+                <p>Easyly click an endpoint below and see the kind of data it returns</p>
+                <ul class="list-group" id="all-stores"> 
+ 
+                    <li class="list-group-item">
+                        <a href="#">GET /items</a>
+                        <input type="hidden" data-href="http://127.0.0.1:5000/items">
+                    </li>
+
+                    <li class="list-group-item">
+                        <a href="#">GET /search/id</a>
+                        <input type="hidden" data-href="http://127.0.0.1:5000/search/2">
+                    </li>
+
+                    <li class="list-group-item"> 
+                        <a href="#">GET /item/search/k</a>
+                        <input type="hidden" data-href="http://127.0.0.1:5000/item/search/k">
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="col col-md-5">
+                <div class="row">
+                    <div class="col col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    Request Header
+                                </div>
+            
+                                <div class="card-body">
+            
+                                </div>               
+                            </div>
+                    </div>
+
+                    <div class="col col-md-12" style="margin-top:2%;">
+                        <div class="card">
+                                <div class="card-header">
+                                    Response Header
+                                </div>
+            
+                                <div class="card-body">
+            
+                                </div>               
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="col col-md-12" style="margin-top:4%;">
+                    <code id="json_resp">
+                        <img id="spinning" src="{{url_for('static', filename='img/spinner.gif')}}" alt="">
+                    </code>
+                </div>
+            </div>
+
+            <div class="col col-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        GET
+                    </div>
+                    <div class="card-body">
+                        <!-- form to return all stores -->
+                        <form>
+                            <p>all items</p>
+                            <p>This returns a list of items from database in json</p>
+                            <a href="#" id="form-item-1" class="btn btn-info">submit</a>
+                        </form>
+                        <hr>
+
+                        <!-- form to return all stores -->
+                        <form>
+                            <p>id</p>   
+                            <input id="query" type="number" required>
+                            <p>This returns one item with the specified item id</p>
+                            <a href="#" id="form-item-2" class="btn btn-info">submit</a>
+                        </form>
+                        <hr>
+
+                        <form>
+                            search q
+                            <input id="searching" type="text" required>
+                            <p>This returns a list of items from database with the specified name</p>
+                            <a href="#" id="form-item-3" class="btn btn-info">submit</a>
+                        </form>
+                        <hr>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <hr>
+    </div>
+</main>
+{% endblock %}

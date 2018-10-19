@@ -107,20 +107,12 @@ class ItemSearch(Resource):
     def get(self, name):
         items = ItemModel.find_by_name(name)
 
-        item_list = [item.name for item in items]
+        item_list = [ {'name':item.name,'price':item.price,'id':item.id}  for item in items]
         
-        #check array length
-        if len(item_list) > 0:
-            for item in items:
+        return item_list, 200
 
-                return {'items': {
-                        'name':item.name,
-                        'id':item.id
-                    }
-                }
 
-        else:
-            return {'message':'No items matches {}'.format(name)}
+   
 
 
 
