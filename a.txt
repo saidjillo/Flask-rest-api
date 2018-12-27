@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 This is a text file
 This is another update
 
+=======
+This is a text file	
+This text file has been edited from github
+>>>>>>> b4b84b5bf9ae8d3aff256daa281fd26d8da1620c
